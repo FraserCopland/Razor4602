@@ -1,0 +1,16 @@
+@page
+@model FutureModel
+@{
+    ViewData["Title"] = "Future";
+    string[] names = new string[] {"John", "Paul", "George", "Ringo"};
+    //names.ToList<string>().sort();
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    @foreach (string name in names)
+    {
+        <p>Hello @name!</p>
+    }
+</div>
